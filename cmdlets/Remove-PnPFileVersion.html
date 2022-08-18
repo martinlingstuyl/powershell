@@ -99,21 +99,23 @@
  [-Connection &lt;PnPConnection&gt;] [&lt;CommonParameters&gt;]
 </code></pre>
 <h2 id="description">DESCRIPTION</h2>
+<p>This cmdlet removes all versions or one specific version for the specified file.</p>
 <h2 id="examples">EXAMPLES</h2>
 <h3 id="example-1">EXAMPLE 1</h3>
 <pre><code class="lang-powershell">Remove-PnPFileVersion -Url Documents/MyDocument.docx -Identity 512
 </code></pre>
-<p>Removes the file version with Id 512</p>
+<p>Removes the file version with Id 512.</p>
 <h3 id="example-2">EXAMPLE 2</h3>
 <pre><code class="lang-powershell">Remove-PnPFileVersion -Url Documents/MyDocument.docx -Identity &quot;Version 1.0&quot;
 </code></pre>
-<p>Removes the file version with label &quot;Version 1.0&quot;</p>
+<p>Removes the file version with label &quot;Version 1.0&quot;.</p>
 <h3 id="example-3">EXAMPLE 3</h3>
 <pre><code class="lang-powershell">Remove-PnPFileVersion -Url Documents/MyDocument.docx -All
 </code></pre>
-<p>Removes all file versions</p>
+<p>Removes all file versions.</p>
 <h2 id="parameters">PARAMETERS</h2>
 <h3 id="-all">-All</h3>
+<p>Specifies whether all file versions should be removed.</p>
 <pre><code class="lang-yaml">Type: SwitchParameter
 Parameter Sets: All
 
@@ -135,7 +137,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 </code></pre>
 <h3 id="-force">-Force</h3>
-<p>If provided, no confirmation will be requested and the action will be performed</p>
+<p>If provided, no confirmation will be requested and the action will be performed.</p>
 <pre><code class="lang-yaml">Type: SwitchParameter
 Parameter Sets: (All)
 
@@ -146,6 +148,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 </code></pre>
 <h3 id="-identity">-Identity</h3>
+<p>The identity of the version. Use ID or label.</p>
 <pre><code class="lang-yaml">Type: FileVersionPipeBind
 Parameter Sets: By Id
 
@@ -156,6 +159,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 </code></pre>
 <h3 id="-recycle">-Recycle</h3>
+<p>Specifies whether the version(s) should go to the recycle bin.</p>
 <pre><code class="lang-yaml">Type: SwitchParameter
 Parameter Sets: (All)
 
@@ -166,6 +170,7 @@ Accept pipeline input: False
 Accept wildcard characters: False
 </code></pre>
 <h3 id="-url">-Url</h3>
+<p>Server relative url or site relative url of the file.</p>
 <pre><code class="lang-yaml">Type: String
 Parameter Sets: (All)
 
